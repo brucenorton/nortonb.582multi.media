@@ -1,0 +1,23 @@
+
+
+#gallery, #projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.44rem;
+}
+#gallery{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* #gallery img{
+    width: 100%;
+} */
+
+.small {
+    max-width: 100%;
+}
+
+.big{
+    max-width: 100%;
+}

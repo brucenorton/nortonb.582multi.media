@@ -1,0 +1,149 @@
+/* a name right out of the department of redundancy department */
+/* Path: httpdocs/ui-ux/css_grid/css/css_grid.css */
+
+/* root vars */
+/* end mini reset */
+:root{
+  --colour-dark: rgb(16 16 16 /1);
+  --colour-complementary: rgb(6 47 79 /1);
+  --colour-primary: rgb(129 55 114 /1);
+  --colour-secondary: rgb(184 38 1 /1);
+}
+
+
+/* mini reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  background-color: rgb(32 32 32 /1);
+  color: rgb(240 240 240 / 0.95);
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+} 
+
+p, ul {
+  font-family: "Poppins", sans-serif;
+} 
+
+/* typescale */
+h1 {
+  font-size: 4.209rem;
+}
+h2 {
+  font-size: 3.157rem;
+}
+h3 {
+  font-size: 1.777rem;
+}
+h4 {
+  font-size: 1.777rem;
+}
+pre,
+code {
+  font-size: 1.2rem;
+  font-family: "Consolas", "Andale Mono", "Lucida Console", "DejaVu Sans Mono",
+    "Courier New", monospace;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: pre-wrap;
+}
+
+small {
+  font-size: 0.777rem;
+}
+
+/* let's take care of the link colours */
+a:link,
+a:visited {
+  color: rgba(151, 193, 234, 0.85);
+  transition: color 0.5s;
+}
+a:hover,
+a:focus {
+  color: rgba(236, 121, 66, 1);
+  text-decoration: none;
+}
+a:active {
+  color: rgba(151, 193, 234, 0.85);
+}
+
+/* set colours */
+nav{
+  background-color: var(--colour-dark);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, auto));
+  gap: 1.44rem;
+  justify-content: right;
+}
+
+header{
+  background-color: var(--colour-complementary);
+  min-height: 400px; /* only for demo... normally just let content determine height */
+}
+nav, header, section, main article{
+  padding: 1.44rem;
+}
+main article:nth-child(odd){
+  background-color: var(--colour-primary);
+}
+main article:nth-child(even){
+  background-color: var(--colour-secondary);
+}
+
+footer{
+  text-align: center;
+}
+
+footer nav{
+  justify-content: center;
+}
+
+
+/* and now the main grid */
+/* mobile first... so nothing?? Or just add grid? */
+
+main{
+  display: grid;
+  gap: 1.44rem;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 700px) {
+  /* note that break points need to be set with the content in mind */
+  /* often based on image sizes */
+  main{
+    /* 1fr is 1 fraction of the available space */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* odd number of content elements, make one the full width */
+  main article:first-child{
+    grid-column: 1/-1; /* first column to last column */
+  }
+}
+@media screen and (min-width: 700px) {
+  /* note that break points need to be set with the content in mind */
+  /* often based on image sizes */
+  main{
+    /* 1fr is 1 fraction of the available space */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* odd number of content elements, make one the full width */
+  main article:first-child{
+    grid-column: 1/-1; /* first column to last column */
+  }
+}

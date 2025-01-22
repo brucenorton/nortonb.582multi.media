@@ -1,0 +1,43 @@
+/* 2d_transform.css */
+
+#html5,
+#css3,
+#car {
+  transition: transform 0.5s;
+}
+
+#html5:hover {
+  transform: rotate(45deg);
+}
+
+#css3:hover {
+  transform: scale(2);
+}
+
+.move-right {
+  transform: translateX(900px);
+}
+
+/* solution */
+article {
+  position: relative;
+}
+article section {
+  position: absolute;
+  top: 2.44em;
+  width: 500px;
+  left: -500px;
+  padding: 0 1em 0.5em 0.5em;
+  background-color: rgba(16, 16, 16, 0.95);
+  transition: transform 0.5s;
+}
+article section nav {
+  width: 110%;
+  text-align: right;
+  background-color: rgba(16, 16, 16, 0.95);
+  padding: 0.5em;
+}
+
+.visible {
+  transform: translateX(500px);
+}

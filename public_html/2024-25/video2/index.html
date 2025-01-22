@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>video2</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/multimedia.css">
+
+</head>
+
+<body>
+  <nav></nav>
+
+  <header>
+    <video playsinline muted controls="false" loop autoplay>
+      <source src="videos/rack_focus_flower_loop.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <h1>/video2</h1>
+      <h3>Video & Audio Editing 2</h3>
+      <h3>582-404-VA</h3>
+    </div>
+    <div id="header-nav">
+    </div>
+  </header>
+  <hr>
+
+  <section>
+    <article>
+      <h3>resources: general</h3>
+      <ul>
+        <li><a href="https://github.com/582Multimedia/" target="_blank" rel="noopener noreferrer">582Multimedia GitHub</a></li>
+        <li><a href="https://github.com/582Multimedia/software-links" target="_blank" rel="noopener noreferrer">582Multimedia GitHub software links</a></li>
+        ***
+        <li><a href="https://capibility.com/" target="_blank" rel="noopener noreferrer">Capibility.com</a></li>
+        <li><a href="https://582multi.media/capyskills/" target="_blank" rel="noopener noreferrer">CapySkills</a></li>
+        <li><a href="https://582multi.media/capyskills/grids/" target="_blank" rel="noopener noreferrer">CapySkills mobile grids</a></li>
+      </ul>
+
+    </article>
+  </section>
+  <hr>
+  <main>
+    <section>
+      <h3>What do you want to do this semester?</h3>
+      <p>My idea is that you shoot a lot of material and edit it. Many of you, it seems, have not shot much material since first semester. What do you think?</p>
+      <p>We have acquired some great new gear to make sharing your stories easier:</p>
+      <ul>
+        <li>4 full-frame, mirroless cameras (2 Lumix s5iix & 2 s5ii)</li>
+        <li>lights, lots of light & stands and stuff</li>
+        <li>microphones and field recorders (3 sets of wireless lav mics, 2 lav mics, 3 field recorders (Zoom H1, H4N Pro, H5)</li>
+        <li>2 DJI phone gimbals, a bunch of phone holders / tripods</li>
+      </ul>
+      <p>Also, I would like to focus on getting good sound for your videos. Ideally you will use microphones in the field to record ambient, voice and maybe even music. And use a DAW (digital audio workstation) such as Adobe Audition process your recordings.</p>
+      <hr>
+      <h3>proposed projects</h3>
+      <p>here is what I suggest, but am open to your input</p>
+      <ul>
+        <li>background looping video(s) for your websites / portfolios</li>
+        <li>an event video (like a live event)</li>
+        <li>special collaborative project with first & third-year students</li>
+        <li>an interview / interviews</li>
+        <li>a personal project (story narrative)</li>
+      </ul>
+    </section>
+    <hr>
+    <section>
+      <article class="video_container anamorphic">
+            <iframe src="https://www.youtube.com/embed/tL5EdKYQwn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <figcaption>a Capyskills event</figcaption>
+      </article>
+    </section>
+    <hr>
+    <section>
+      <h3>deliverables</h3>
+      <p>for the main projects, I propose the following deliverables</p>
+      <p>video 2 websites MUST be located at <strong>video2/</strong></p>
+      <ul>
+        <li>Capyskills journal (<a href="https://582multi.media/capyskills">see details</a>)</li>
+        <li>project brainstorming & description (Figma?)</li>
+        <li>project plan including (as appropriate):
+          <ul>
+            <li>moodboard / storyboard / script</li>
+            <li>shot list / set plan / properties list</li>
+            <li>calendar / timeline </li>
+
+          </ul>
+        </li>
+        <li>draft version with feedback</li>
+        <li>final version including: (dropped in shared OneDrive folder)
+          <ul>
+            <li>title sequence</li>
+            <li>credits for you / content creators</li>
+            <li>credits for any media / resources you used</li>
+          </ul>
+        </li>
+        <li>web page with:
+          <ul>
+            <li>title</li>
+            <li>description with challenge / client brief</li>
+            <li>optional: sharing process with storyboards / scripts etc</li>
+            <li>final work</li>
+            <li>summary with feedback / result etc</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>background, looping video</h3>
+      <p>shoot some video(s) edit & format for use as a background, looping video.</p>
+      <p>Your loop should smooth, so that the start & stop is not apparent. You can use a number of techniques but essetially the first and last frames should be identical (or nearly identical):</p>
+      <ul>
+        <li>a static scene with subjects entering / exit the scene</li>
+        <li>perfectly repeating movement</li>
+        <li>something that passes in front of the camera obscuring the background</li>
+        <li>camera movement the hides the edit</li>
+        <li>multiple scenes</li>
+        <li>a combination of above</li>
+      </ul>
+      <p><a href="loop.html">loop example with html & css</a></p>
+    </section>
+  </main>
+
+  <hr id="students">
+  <section id="student-section">
+    <h3>our sites</h3>
+    <article id="student-sites"></article>
+  </section>
+
+  <figure id="logo_divider"><img src="/images/logo_divider.png" alt=""></figure>
+
+  <footer></footer>
+
+  <script src="/js/fetch_common.js"></script>
+  <script src="/js/calendar.js"></script>
+  <script type="module">
+    import { fetchStudents } from '/js/fetch_students.mjs?cohort=s4_h2025&server=582mi.com&course=video2';
+    fetchStudents();
+  </script>
+</body>
+
+</html>

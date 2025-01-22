@@ -1,0 +1,56 @@
+#car {
+  animation-name: drivingAround;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes drivingAround {
+  0% {
+    transform: translateX(0px);
+  }
+
+  48% {
+    transform: translateX(600px);
+  }
+  50% {
+    transform: rotateY(180deg) translateX(-600px);
+  }
+  98% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* more
+
+@keyframes drivingAround {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+  0% {
+    transform: translateX(0px);
+  }
+
+  48% {
+    transform: translateX(600px);
+  }
+  50% {
+    transform: rotateY(180deg) translateX(-600px);
+  }
+  98% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }

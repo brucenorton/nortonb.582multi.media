@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>lazy loading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="copyright" content="&COPY; 2022-2029">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/ui-ux.css">
+  <link rel="stylesheet" href="css/lazy_loading.css">
+
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>lazy loading</h1>
+      <h2>improve user experience</h2>
+      <p>only load content as needed</p>
+    </section>
+  </header>
+  <section id="gallery">
+    <h3>striking along with 420,000 other public workers</h3>
+    <figure>
+      <img src="images/manif2023-4269340.jpg" alt="candid black & white photo from strike">
+      <figcaption>alley dog</figcaption>
+    </figure>
+    <figure>
+      <img src="images/manif2023-4269348.jpg" alt="candid black & white photo from strike">
+      <figcaption>Marie-Soleil</figcaption>
+    </figure>
+    <figure>
+      <img src="images/manif2023-4269288.jpg" alt="candid black & white photo from strike">
+      <figcaption>tree</figcaption>
+    </figure>
+    <figure>
+      <img src="images/manif2023-4269297.jpg" alt="candid black & white photo from strike">
+      <figcaption>the prez</figcaption>
+    </figure>
+    <figure>
+      <img src="images/manif2023-4269295.jpg" alt="candid black & white photo from strike">
+      <figcaption>Salle St-Joseph</figcaption>
+    </figure>
+    <figure>
+      <img src="images/manif2023-4269302.jpg" alt="candid black & white photo from strike">
+      <figcaption>getting public support</figcaption>
+    </figure>
+  </section>
+
+  <!-- modal stuff-->
+  <div class="modal-overlay closed" id="modal-overlay"></div>
+  <section class="modal closed" id="modal">
+    <button class="close-button" id="close-button">close modal</button>
+    <figure></figure>
+  </section>
+
+  <footer>
+    <p>&COPY; 2023</p>
+  </footer>
+
+  <nav>
+    <a href="https://web582.com" id="logo" target="_blank">web582.com</a>
+    <a href="#projects">projects</a>
+    <a href="#student-sites">sites</a>
+    <a href="../">ui/ux</a>
+    <a href="https://nortonb.web582.com">dynamic</a>
+    <a href="https://vaniercollege.omnivox.ca" target="_blank"><img src="../../images/logo-omnivox.png" alt=""></a>
+  </nav>
+
+  <script src="../js/observer.js"></script>
+  <script src="js/lazy_loading.js"></script>
+  <!-- uncomment to see modal <script src="js/modal.js"></script> -->
+</body>
+</html>

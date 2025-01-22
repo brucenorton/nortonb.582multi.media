@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bad animation</title>
+
+      <link rel="stylesheet" href="css/demo-styles.css" />
+      <style>
+        body{background-color: rgb(67, 201, 89);}
+        nav {
+          display: block;
+        }
+         title{
+      font-size:xx-large;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+      
+    .resize {
+    width: 200px;
+    height: auto;
+}
+
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-block-start: 0;
+          padding-inline-start: 0;
+    
+          margin: 0;
+        }
+    li:hover{color:rgb(47, 154, 255);
+  background-color:rgb(224, 177, 106);
+  padding:8px;
+  font-size: 125%;
+  
+  transition-duration: 500ms;
+  }
+        li {
+          background-color:rgb(107, 104, 230);
+          margin: 10px;
+          padding: 5px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    #gallery{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+        #car, #good {
+          width: 15%;
+          height:auto ;
+           border: 10px solid rgb(107, 104, 230);
+          padding: 5px;
+          transition: 0.5s all;
+        }
+        #car:hover{
+          width: 30%;
+        }
+        #good:hover{
+          transform: scale(2);
+        }
+         ok{
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-size: 110%;
+    }
+      </style>
+    </head>
+
+    <body>
+      <nav>
+        <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Web 1</a></li>
+      <li><a href="#">Micromedia Home</a></li>
+        </nav>
+      </ul>
+      <header>bad animation practices</header>
+     <ok> <p>so, don't do this....
+      </p></ok>
+      <section id="gallery">
+      <figure>
+        <img class="resize" src="images/car.png" alt="car" id="car"/>
+        <figcaption>i go vroom vroom</figcaption>
+      </figure>
+      <figure>
+        <img class="resize" src="images/car.png" alt="car" id="good" />
+        <figcaption>using transform!!</figcaption>
+      </figure>
+    </section>
+<br>
+<p>This is some more text down below</p>
+<section id="gallery">
+  <figure>
+    <img class="resize" src="images/css3.png" alt="car" id="car" />
+    <figcaption>i go vroom vroom</figcaption>
+  </figure>
+  <figure>
+    <img class="resize" src="images/html5.png" alt="car" id="good" />
+    <figcaption>using transform!!</figcaption>
+  </figure>
+</section>
+
+    </body>
+</html>

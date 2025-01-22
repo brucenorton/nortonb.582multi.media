@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Applied UI/UX Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="copyright" content="&COPY; 2022-2029">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ui-ux.css">
+
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>Applied UI/UX Design</h1>
+      <h2>582-31D-VA</h2>
+      <h3>Wednesdays 9-12:30 e413</h3>
+      <p>Bruce Norton</p>
+    </section>
+  </header>
+  <main>
+    <section id="projects">
+      <h3><strong>projects</strong></h3>
+      <ul>
+        <li><a href="#p2">p2. apply UI / UX to a site</a> (2024/01/10) backed by a relational database using PHP and mySQLi.<ul>
+            <li><a href="#ex21">2.1 description </a>(12/6)</li>
+            <li><a href="#ex22">2.2 tech plan</a> (12/13)</li>
+            <li><a href="#ex23">2.3 UI / UX plan</a> (12/20)</li>
+          </ul>
+        </li>
+        <li><a href="#p1">p1. research & redesign existing UX</a> (it can be your own, or someone else's) (11/15) <ul>
+            <li><a href="#ex1_1">1.1 homepage </a> (10/18)</li>
+            <li><a href="#ex1_2">1.2 ux evaluation</a> (10/25)</li>
+            <li><a href="#ex1_3">1.3 ui evaluation </a> (11/1)</li>
+          </ul>
+        </li>
+
+
+      </ul>
+      <p><a href="https://eduvaniercollegeqc.sharepoint.com/:w:/r/sites/MEQ2-WebsiteDesignSpecialist/_layouts/15/Doc.aspx?sourcedoc=%7BD694D81D-3C25-4E57-8B83-2C9650EEC956%7D&file=Website%20Design%20Specialist%20MEQ%202%20Block%203%20Schedule%20Updated%20Sep.21,%202023.docx&action=default&mobileredirect=true" target="_blank" rel="noopener noreferrer">Block 3 Schedule</a></p>
+    </section>
+
+    <article class="parallax"></article>
+
+    <section>
+      <h3>week 10ish (2 classes)</h3>
+      <p>warning rocks</p>
+      <ul>
+        <li>presentations & feedback</li>
+        <li>article: <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener noreferrer">Lighthouse docs</a></li>
+        <li>article: <a href="https://medium.com/@n-demia/efficient-visual-layout-testing-with-chrome-devtools-30baf5bd123a" target="_blank" rel="noopener noreferrer">layout testing</a></li>
+        <li><a href="#usability">usability testing</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://bruno-simon.com/" target="_blank" rel="noopener noreferrer">Bruno Simon 3JS portfolio (smooth animation)</a></li>
+      </ul>
+
+      <p><strong>Jan. 11, online </strong>  (see Teams calendar for meeting link)</p>
+      <ul>
+        <li>30-45 minutes intro, questions etc.</li>
+        <li>followed by work / debugging & working on case studies</li>
+      </ul>
+      <p><strong>Jan. 17, in-person: case studies</strong></p>
+      <ul>
+        <li>share case studies ??</li>
+        <li>review web server</li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section class="parallax"></section>
+    <section id="usability">
+      <h3>usability testing (continued)</h3>
+      <ul>
+        <li>usability testing <ul>
+          <li>define user tasks</li>
+          <li><a href="https://developer.chrome.com/docs/devtools/recorder" target="_blank" rel="noopener noreferrer">watch / record </a> how these tasks are completed</li>
+          <li><a href="images/Recording 1_11_2024 at 9_41_37 AM.js" target="_blank" rel="noopener noreferrer">puppeteer file</a></li>
+          <li>gather feedback: <ul>
+
+            <li>general, overall impressions?</li>
+            <li>perception of service / product?</li>
+            <li>user needs & whether they were satisfied?</li>
+            <li>bugs / errors / unexpected results?</li>
+            <li>efficiency of task completion?</li>
+          
+          </ul></li>
+      </ul>
+      <code>
+        <strong>a bit hacky... but fixes a ux problem</strong>
+        @supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */ 
+  .parallax{
+    background-attachment: fixed;
+    /* fixed is NOT supported on ios devices */
+  }
+}
+      </code>
+    </section>
+
+    <section class="parallax"></section>
+    
+    <section>
+      <h3>incremental gains</h3>
+      <figure>
+        <img src="images/lightouse_usability.webp" alt="" loading="lazy">
+        <figcaption>incremental gains to improve usability</figcaption>
+      </figure>
+      <ul>
+        <li>duplicated id's (student-site)</li>
+        <li>added &lt;title&gt; tags from Figma & YouTube  &lt;iframe&gt;</li>
+        <li>cleaned up non &lt;li&gt; elements in  &lt;ul&gt;</li>
+        <li>use <a href="images/lightouse_usability.webp" target="_blank" rel="noopener noreferrer">.webp (246kb)</a> instead of .jpg &<a href="images/lightouse_usability.png" target="_blank" rel="noopener noreferrer"> .png (544kb)</a> i.e. PS > save a copy > webp</li>
+        <li>added <a href="js/observer_parallax.js" target="_blank" rel="noopener noreferrer">intersection observer on .parallax elements</a> </li>
+      </ul>
+    </section>
+    
+    <section class="parallax"></section>
+
+    <section>
+      <h3>week 9ish (2 classes)</h3>
+      <p><strong>usability testing</strong>. Doing some usability testing for an application we are working on to help students develop their transversal / soft skills. Please check out the app, then reply to the questionnaire.</p>
+      <ul>
+        <li>test on mobile or at least using developer tools (incognito?) <a href="https://college.dokoma.com/fr" target="_blank" rel="noopener noreferrer">application</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScamsfdF2NZEdGgZQZWAy04xpYJlDsg-wuJ1EgguUrdkn-_kg/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">questionnaire</a></li>
+      </ul>
+      <p>And here is <a href="https://www.interaction-design.org/literature/topics/agile-development" target="_blank" rel="noopener noreferrer">an article on agile development from interaction-design.org</a></p>
+      
+      <p><strong>Dec. 21 schedule</strong></p>
+      <ul>
+        <li>9:30 Lesmy, Sara & MoonHee (River)</li>
+        <li>9:45 Fransis, Haitham & Shima (Employee MS)</li>
+        <li>10:00 Maiko, Tanveer, Tischa (Audiosphere)</li>
+        <li>10:15 Andy & Jessica (Skillforge)</li>
+        <li>10:30 André(s) & Alex (Kitnote)</li>
+        <li>10:45 Zakaria, Aysegul & Rishi (Bektaşi Tesbih)</li>
+        <li>11:00 Myrna, Brian (travel site)</li>
+        <li>11:15 Xuan, Wei, Li Xia (To Buy) </li>
+      </ul>
+      <p>let's get things moving</p>
+      <ul>
+        <li>animation demos / tutorials: <a href="animation/" rel="noopener noreferrer">animation challenges</a></li>
+        <li>resources from MDN:
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank" rel="noopener noreferrer">MDN css transition</a> !! don't tranition margin !!! aRGGGHHH</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transforms" target="_blank" rel="noopener noreferrer">MDN css transorm</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="_blank" rel="noopener noreferrer">MDN css @keyframe animations</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL" target="_blank" rel="noopener noreferrer">MDN svg animation</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API" target="_blank" rel="noopener noreferrer">MDN web animation api</a></li>
+          </ul>
+        <li>video tutorial: <a href="https://youtu.be/FJ44qmE5odc?si=IcPiMY_qhBeBBfgz" target="_blank" rel="noopener noreferrer">Design Course: animate svg on scroll</a></li>
+        <li>video tutorial: <a href="https://youtu.be/H_7Ld5Psgg0?si=jeDPy5FZcYgeoCOc" target="_blank" rel="noopener noreferrer">Design Course: another from Gary</a></li>
+        </li>
+      </ul>
+      <hr>
+
+      <ul>
+        <li>Figma prototyping
+          <ul>
+            <li>demo: <a href="https://www.figma.com/file/DY0rrEEorcGyQAF95xr2kv/prototype_example?type=design&node-id=0%3A1&mode=design&t=cfEOJEFOqXDZSCfU-1" target="_blank" rel="noopener noreferrer">figma prototyping</a></li>
+            <li>demo prototype: <a href="https://www.figma.com/proto/DY0rrEEorcGyQAF95xr2kv/prototype_example?type=design&node-id=1-4053&t=NwBaWRePbyiVFaps-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4053&mode=design" target="_blank" rel="noopener noreferrer">figma prototype</a></li>
+            <li>demo: <a href="https://www.figma.com/file/JcHItdByGm7c6CIBcqqTqG/prototype_component_variant_auto_layout?type=design&node-id=0%3A1&mode=design&t=xeMkbjVIBAepjkk0-1" target="_blank" rel="noopener noreferrer">component animations / interactions</a></li>
+            <li>video tutorial: <a href="https://youtu.be/YtBOJKuEz9g?si=cJt24NyPp6W2pYun" target="_blank" rel="noopener noreferrer">video tutorial from Moonlearning</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <article class="parallax"></article>
+
+    <section>
+      <h3>week 7</h3>
+      <p>so lazy</p>
+      <ul>
+        <li>demo: <a href="lazy_loading/">lazy loading gallery demo</a></li>
+        <li>demo: <a href="lazy_loading/">uncomment modal.js to see modal in action</a></li>
+        <li>article: <a href="https://uxmovement.medium.com/how-to-make-any-information-heavy-design-look-less-busy-79fe3808ebbd" target="_blank" rel="noopener noreferrer">info heavy design simplified</a></li>
+        <li>article: <a href="https://medium.com/design-led/poor-navigation10-scariest-ui-ux-design-mistakes-e7b41355395c" target="_blank" rel="noopener noreferrer">ui/ux mistakes</a></li>
+        <li>article: <a href="good vs bad design
+          https://careerist.medium.com/good-vs-bad-design-10-examples-fb2b388c4bdb" target="_blank" rel="noopener noreferrer">good vs. bad design</a></li>
+        <li>article: <a href="https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrated-example-for-non-programmers-1222b600a0f0" target="_blank" rel="noopener noreferrer">good vs bad code: illustrated for non-programmers</a></li>
+      </ul>
+
+
+    </section>
+
+    <article class="parallax"></article>
+
+    <section>
+      <h3>week 6</h3>
+      <p>observing intersections</p>
+      <ul>
+        <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank">intersectionObserver docs</a></li>
+        <li>presentations</li>
+        <li> <a href="https://www.interaction-design.org/literature/article/7-ux-deliverables-what-will-i-be-making-as-a-ux-designer" target="_blank" rel="noopener noreferrer"> UI/UX deliverables (Interaction Design Foundation)</a></li>
+        <li>activity: Don't Make me Think <ul>
+            <li>obvious? self-explanatory?</li>
+            <li>call to action?</li>
+            <li>what's clickable?</li>
+            <li>what can users do?</li>
+          </ul>
+        </li>
+        <li>problem with <a href="https://www.figma.com/proto/clMuipk7VjtM1IvgKfMYOo/ui-evaluation?type=design&node-id=1-2&t=shGXUaQXYurNtbc4-0&scaling=scale-down&page-id=0:1">Figma prototypes not zooming.</a></li>
+        <li>project 2 details</li>
+        <li><a href="images/VanierCollegeBrandGuidelines.pdf" target="_blank" rel="noopener noreferrer">Vanier Brand Guidelines</a></li>
+        <li>no class November 22, moved to Dec. 14 9-12:30 (online?)</li>
+      </ul>
+      <p><a href="https://codestitch.app/complete-guide-to-freelancing" target="_blank" rel="noopener noreferrer">Complete Guide to Freelancing: Ryan Postell</a></p>
+    </section>
+    <article class="parallax"></article>
+
+    <section id="ex21">
+      <h3>2.1 project 2 description (12/6)</h3>
+      <p>Describe your website, as a web page, possibly with links to Figma (or similar), including: </p>
+      <ul>
+        <li>site map <a href="https://uxdesign.cc/how-to-create-a-ux-sitemap-a-simple-guideline-8786c16f85c1" target="_blank" rel="noopener noreferrer">examples</a></li>
+        <li>wireframes <a href="https://nulab.com/learn/design-and-ux/10-must-see-wireframe-examples-inspire-next-design/" target="_blank" rel="noopener noreferrer">examples</a></li>
+        <li>moodboard <a href="https://www.mockplus.com/blog/post/mood-board-examples" target="_blank" rel="noopener noreferrer">examples</a></li>
+        <li>mockup <a href="https://www.uxpin.com/studio/blog/prototypes-wireframes-mockup-difference/" target="_blank" rel="noopener noreferrer">comparison article</a></li>
+      </ul>
+      <p>This is similar to what we did in Dynamic for project 1 for exercises 1.1, 1.2 & 1.3.</p>
+    </section>
+
+    <article class="parallax"></article>
+
+    <section id="ex22">
+      <h3>ex2.2 project 2 tech plan (12/13)</h3>
+      <p>Plan the technical specifcations for your website creating a web page that includes:</p>
+      <ul>
+        <li>db schema (physical model) <a href="https://hevodata.com/learn/schema-example/" target="_blank" rel="noopener noreferrer">article</a></li>
+        <li>php pseudocode <a href="https://www.freecodecamp.org/news/what-is-pseudocode-in-programming/" target="_blank" rel="noopener noreferrer">article</a></li>
+        <li>js pseudocode</li>
+        <li>file structure including folder & file names.</li>
+      </ul>
+      <p>This builds on Dynamic project 3 where we did app plans for ex3.2.</p>
+    </section>
+
+    <article class="parallax"></article>
+
+    <section id="ex23">
+      <h3>ex2.3 UI/UX plan (12/20)</h3>
+      <p>Create a plan, in the form of a website, with details about your project including:</p>
+      <ul>
+        <li>UI / UX evaluation of other, similar apps / sites</li>
+        <li>user personas (min 3) <a href="https://qubstudio.com/blog/4-examples-of-ux-personas/" target="_blank" rel="noopener noreferrer">examples</a></li>
+        <li>interactive prototype <a href="https://help.figma.com/hc/en-us/articles/360040314193-Guide-to-prototyping-in-Figma" target="_blank" rel="noopener noreferrer">Figma prototyping tutorial</a></li>
+        <li>usability testing <a href="https://blog.hubspot.com/marketing/usability-testing" target="_blank" rel="noopener noreferrer">how-to article</a></li>
+      </ul>
+      <p>This incorporates the UI / UX evaluations we have done for project 1 in UI/UX.</p>
+    </section>
+
+    <article class="parallax"></article>
+
+    <section id="p2">
+      <h3>project 2: UI/UX project</h3>
+      <p>Create a web application with a focus on UI/UX backed by a relational db, using PHP, mySQLi, fetch API & JSON. Using your description, tech plan and UI/UX plan, present your site as a case study.</p>
+      <ul>
+        <li>deliverables:
+          <ul>
+            <li><strong>project 2 final site presentation: 50%</strong> (2024/01/10)</li>
+            <li>application can be practically with the following attributes:
+              <ul>
+                <li>allows for user input / interaction</li>
+                <li>backed by a relational db using php & mySQLi</li>
+                <li>used the fetch API & JSON</li>
+              </ul>
+            </li>
+            <li><strong>project 2 case study: 50%</strong> (2024/01/17)</li>
+            <li>present your site in the form of a case study that includes:
+              <ul>
+                <li>a description of your site adapted from ex2.1</li>
+                <li>your tech plan adapted from ex2.2</li>
+                <li>your ui/ux plan adapted from ex2.3</li>
+                <li>wrapped in common accoutrements such as object, challenge / problem, solution, takeaways</li>
+                <li>plus add some feedback from after your final site presentation</li>
+              </ul>
+            <li>Keep the case study concise and digestible for potential clients / stage hosts / employers.</li>
+        </li>
+      </ul>
+      </li>
+      </ul>
+    </section>
+
+    <article class="parallax"></article>
+
+    <section>
+      <h3>week 5</h3>
+      <p>storing stuff</p>
+      <ul>
+        <li>localStorage <a href="local_storage/">tutorial / demo</a></li>
+        <li>discussion: stages of action & processes</li>
+        <li>discussion: Don't Make me Think (chapter 1)</li>
+        <li>question: project 1?</li>
+      </ul>
+      <p><a href="https://codestitch.app/complete-guide-to-freelancing" target="_blank" rel="noopener noreferrer">Complete Guide to Freelancing: Ryan Postell</a></p>
+    </section>
+    <article class="parallax"></article>
+
+
+
+    <section id="p1">
+      <h3>project 1: UI/UX redesign</h3>
+      <p>Resdesign an existing user experience to improve both the UI & UX, each according to the evaluation criteria we have established. The experience could be a web site, an application, a platform, a system or whatever you think is appropriate.</p>
+      <p><strong>Deliverables:</strong></p>
+      <ul>
+        <li>25%: analysis of existing <a href="#ui_evaluation">UI</a>/<a href="#ux_evaluation">UX</a> with supporting visuals (photos, videos, sketches).</li>
+        <li>25%: 3 user personas (quick protos are fine)</li>
+        <li>25%: improvement plan including what you will improve, how and why, why, why, why, why</li>
+        <li>25%: a final improved "document" normally a Figma prototype, website or app. But it could take another form depending on your target UX.</li>
+      </ul>
+      <p>Your project should be presented as a web page in the form of a case study you can use in your portfolio. Keep it concise and digestible for potential clients / stage hosts / employers.</p>
+      <p>due: <strong>Nov. 15 (presentation) / Nov. 22 final after improvements</strong></p>
+    </section>
+    <article class="parallax"></article>
+
+    <section>
+      <h3>week 4</h3>
+      <p>users or used?</p>
+      <ul>
+        <li><a href="css_grid/" target="_blank" rel="noopener noreferrer">css grid exercise</a></li>
+        <li>discussion: stages of action & processes</li>
+        <li>using AI for ui/ux evals?!?</li>
+        <li>resource: <a href="https://www.uxdesigninstitute.com/blog/what-are-ux-personas/" target="_blank" rel="noopener noreferrer">User Personas article</a></li>
+        <li>resource: UI/UX <a href="https://htmlburger.com/blog/ux-case-studies/" target="_blank" rel="noopener noreferrer">case studies (examples)</a>
+          <ul>
+            <li><a href="https://blog.tubikstudio.com/case-study-recipes-app-ux-design/" target="_blank" rel="noopener noreferrer">i.e. this recipe app case study</a></li>
+          </ul>
+        </li>
+        <li>tutorial: <a href="https://help.figma.com/hc/en-us/articles/360040314193-Guide-to-prototyping-in-Figma" target="_blank" rel="noopener noreferrer">Figma Prototyping tutorial</a></li>
+        </ul>
+
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0DoHvdjwasgNYEkkJZcOPa%2Fcss-grid%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DJNZHBSB8UqdAwWmc-1" title="Figma prototyping file." allowfullscreen></iframe>
+        <ul>
+        <li>reading: at the very least <strong>read chapter 1</strong> of<a href="https://eng317hannah.wordpress.ncsu.edu/files/2020/01/Krug_Steve_Dont_make_me_think_revisited___a_cz-lib.org_.pdf" target="_blank" rel="noopener noreferrer">Steven Krug's Don't Make Me Think</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank" rel="noopener noreferrer">MDN: semantics html for accessibility</a></li>
+      </ul>
+    </section>
+    <article class="parallax"></article>
+
+    <section>
+      <h3>week 3</h3>
+      <ul>
+        <li>review projects / exercises</li>
+        <li><a href="#ux_evaluation">UX evaluation (review)</a></li>
+        <li><a href="#ui_evaluation">UI evaluation</a></li>
+        <li><a href="https://github.com/Vondark/books/blob/master/docs/src/Misc/The-Design-of-Everyday-Things-Revised-and-Expanded-Edition.pdf" target="_blank" rel="noopener noreferrer">review "7 Stages of Action (p.40) & 3 Processes (p.55)</a></li>
+        <li>UI evaluation activity (groups of 3 or 4)</li>
+
+      </ul>
+      <h3>p1 redesign groups</h3>
+      <ul>
+        <li>car seats <ul>
+            <li>Brian</li>
+            <li>Haitham</li>
+            <li>Myrna</li>
+          </ul>
+        </li>
+        <li>?? <ul>
+            <li>Jessica</li>
+            <li>Li</li>
+            <li>Xuan</li>
+          </ul>
+        </li>
+        <li>maps <ul>
+            <li>Lesmy</li>
+            <li>MoohHee</li>
+            <li>Sarah</li>
+          </ul>
+        </li>
+        <li>personal site: Andy</li>
+        <li>moon phase <ul>
+            <li>Tischa</li>
+            <li>Maiko</li>
+          </ul>
+        </li>
+        <li>?? : Wei</li>
+        <li>Cuisine Jackpot <ul>
+            <li>Fransis</li>
+            <li>Shima</li>
+          </ul>
+        </li>
+        <li>MTL parking <ul>
+            <li>André(s)</li>
+            <li>Cawa</li>
+          </ul>
+        </li>
+        <li>Aysegul</li>
+        <li>Zakaria</li>
+        <li>Tanveer</li>
+        <li>Rishi</li>
+
+      </ul>
+
+    </section>
+    <article class='parallax'></article>
+    <section id="ex1_3">
+      <h3>exercise 1.3 ui evaluation</h3>
+      <p>Evaluate an interface you use for it's UI. Your evaluation should: </p>
+      <ul>
+        <li>include a short description</li>
+        <li>ideally include photo(s) or video</li>
+        <li>examine at least 2 or 3 <a href="#ui_evaluation">dimensions from this list</a></li>
+        <li>feel free to bring in other elements from your own knowledge and experience</li>
+      </ul>
+      <p>due: <strong>Wednesday, Nov. 1 (before class)</strong></p>
+    </section>
+
+
+    <article class='parallax'></article>
+    <section id="ex1_1">
+      <h3>exercise 1.1 /ui-ux/ homepage</h3>
+      <p>Create a homepage in a <strong>/ui-ux/</strong> subfolder that includes the following:</p>
+      <ul>
+        <li>your name</li>
+        <li>links to all exercises and projects</li>
+        <li>some visuals (photos, illustrations, videos)</li>
+        <li>link to your home page (may link to others too)</li>
+      </ul>
+      <p>Your ui-ux homepage should: </p>
+      <ul>
+        <li>be mobile-first and responsive</li>
+        <li>use CSS grid for layout</li>
+        <li>use semantic html</li>
+        <li>use well structure html & css</li>
+        <li>include common elements like nav, header, main, footer</li>
+      </ul>
+      <p>due: <strong>Wednesday, Oct. 18</strong></p>
+    </section>
+    <article class='parallax'></article>
+    <section id="ex1_2">
+      <h3>ex1.2 ux evaluation</h3>
+      <p>Evaluate something in your environment for it's UX. Your evaluation should: </p>
+      <ul>
+        <li>include a short description</li>
+        <li>ideally include photo(s) or video</li>
+        <li>examine at least 2 or 3 <a href="#ux_evaluation">dimensions from this list</a></li>
+        <li>feel free to bring in other elements from your own knowledge and experience</li>
+      </ul>
+      <p>due: <strong>Wednesday, Oct 25 (before class)</strong></p>
+    </section>
+    <article class='parallax'></article>
+
+    <section id="light-switch-ux" class="col-2">
+      <article>
+        <h3>quickie UX reflections using <a href="#ux_evaluation">these evaluation criteria</a></h3>
+        <ul>
+          <li>intuitiveness: very, follows common pattern, up = on, down = off</li>
+          <li>efficiency</li>
+          <li>ergonomics & comfort: on/off is good. Adjusting intensity buttons are small, button feedback is vague, on the wrong side?</li>
+          <li>accessibility: good for on/off. Difficult for intensity.</li>
+          <li>affordance & signifiers: on/off & intesnsity work. 3rd control remains a mystery. </li>
+          <li>aesthetics: meh. simple. functional. materials feel cheap. </li>
+          <li>responsiveness & feedback: very nice for intensity feedback. All good except in intensity button feel</li>
+        </ul>
+      </article>
+      <article class="video-container">
+        <iframe src="https://www.youtube.com/embed/zJXARbBqNM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+      </article>
+    </section>
+    <article class='parallax'></article>
+
+    <section id="tutorials">
+      <h3><del>possible</del> planned coding tutorials</h3>
+      <ul>
+        <li>grid <ul>
+            <li>responsive design</li>
+            <li>grid-template-columns</li>
+            <li>@media queries</li>
+            <li>minmax</li>
+            <li>repeat</li>
+            <li>clamp</li>
+          </ul>
+        </li>
+        <li>modals</li>
+        <li>localStorage</li>
+        <li>intersection observer <ul>
+            <li>css animation </li>
+            <li>transitions</li>
+            <li>2d / 3d transform</li>
+            <li>@keyframe animations</li>
+          </ul>
+        </li>
+        <li>js animate api <ul>
+            <li>event delegation</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>original list</h3>
+      <p>Sharing this list of common UI / UX coding techniques.</p>
+      <p>While not really techniques, first & foremost should be sites that are mobile-first & repsonsive, accessible, progressively enhanced and degrade gracefully.</p>
+      <ul>
+        <li>CSS grid <ul>
+            <li><code>grid-template-columns: repeat(5, minmax(auto, auto));</code></li>
+            <li>clamp</li>
+          </ul>
+        </li>
+        <li>position
+          <ul>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+          </ul>
+        </li>
+        <li><a href="https://typescale.com/">typescale</a></li>
+        <li>@media queries</li>
+        <li>smooth-scroll</li>
+        <li>intersection observer & lazy loading</li>
+        <li>css animations including <ul>
+            <li>transitions</li>
+            <li>transforms (2d & 3d)</li>
+            <li>@keyframe animation</li>
+          </ul>
+        </li>
+        <li>js animate API</li>
+        <li>modals</li>
+        <li>requestAnimationFrame</li>
+        <li>localStorage</li>
+        <li>web push notifications / service workers</li>
+        <li>event delegation</li>
+        <li>drag 'n drop</li>
+        <li>progress indicators</li>
+        <li>mobile techniques
+          <ul>
+            <li>touch events</li>
+            <li>APIs such as GPS, vibration</li>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+    <article class='parallax'></article>
+
+    <section>
+      <h3>UX principles</h3>
+      <p>UX topics to explore this block</p>
+      <ul>
+        <li>human-centred design</li>
+        <li>user research</li>
+        <li>information architecture</li>
+        <li>interaction design</li>
+        <li>usability & heuristics</li>
+        <li>prototyping / wireframing</li>
+        <li>visual hierarchy</li>
+        <li>typography & aesthetics</li>
+        <li>accessibility</li>
+        <li>ethics, privacy & security</li>
+      </ul>
+    </section>
+    <article class='parallax'></article>
+
+    <section id="ux_evaluation">
+      <h3>evaluating UX</h3>
+      <p>dimensions to consider when evaluating UX </p>
+      <ul>
+        <li>intuitiveness</li>
+        <li>efficiency</li>
+        <li>ergonomics & comfort</li>
+        <li>accessibility</li>
+        <li>affordance & signifiers</li>
+        <li>safety & errors</li>
+        <li>aesthetics</li>
+        <li>responsiveness & feedback</li>
+        <li>context</li>
+      </ul>
+    </section>
+    <article class='parallax'></article>
+
+    <section>
+      <h3>UI principles</h3>
+      <p>UI topics to explore this block</p>
+      <ul>
+        <li>design & trends</li>
+        <li>design principles</li>
+        <li>typography</li>
+        <li>colour theory</li>
+        <li>iconography & imagery</li>
+        <li>interaction design & animation</li>
+        <li>design systems & style guides</li>
+        <li>mobile-first & responsive design</li>
+        <li>prototyping & Figma</li>
+        <li>usability & testing</li>
+      </ul>
+    </section>
+    <article class='parallax'></article>
+
+    <section id="ui_evaluation">
+      <h3>evaluating UI</h3>
+      <p>dimensions to consider when evaluating UI </p>
+      <ul>
+        <li>visual design
+          <ul>
+            <li>hierarchy</li>
+            <li>colour scheme</li>
+            <li>typography</li>
+            <li>imagery / graphics</li>
+          </ul>
+        </li>
+        <li>usability
+          <ul>
+            <li>navigation</li>
+            <li>accessibility</li>
+            <li>responsiveness</li>
+          </ul>
+        </li>
+        <li>interaction design
+          <ul>
+            <li>load times</li>
+            <li>feedback</li>
+            <li>error handling</li>
+          </ul>
+        </li>
+        <li>content
+          <ul>
+            <li>readability</li>
+            <li>relevance</li>
+            <li>consistency</li>
+          </ul>
+        </li>
+        <li>innovation
+          <ul>
+            <li>engagement</li>
+            <li>creativity</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <article class='parallax'></article>
+    <section>
+      <h3>UI / UX foundational principles</h3>
+      <p>Let's check out some of the primary sources for UI / UX.</p>
+      <ul>
+        <li><a href="https://github.com/Vondark/books/blob/master/docs/src/Misc/The-Design-of-Everyday-Things-Revised-and-Expanded-Edition.pdf" target="_blank" rel="noopener noreferrer">Don Norman's Design of Everyday Things</a> as recommended by André</li>
+        <li><a href="https://eng317hannah.wordpress.ncsu.edu/files/2020/01/Krug_Steve_Dont_make_me_think_revisited___a_cz-lib.org_.pdf" target="_blank" rel="noopener noreferrer">Steven Krug's Don't Make Me Think</a></li>
+        <li><a href="https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/contextual-design#:~:text=Karen%20Holtzblatt%20and%20Hugh%20Beyer,DEC)%20in%20the%20early%201980s." target="_blank" rel="noopener noreferrer">Contextual Design with Karen Holtzblatt</a> see 5 key principles in section 8.1 and section 8.3</li>
+        <li><a href="https://designopendata.files.wordpress.com/2014/05/lawsofsimplicity_johnmaeda.pdf" target="_blank" rel="noopener noreferrer">John Maeda's The Laws of Simplicity</a> plus check out <a href="http://lawsofsimplicity.com" target="_blank" rel="noopener noreferrer">the Laws of Simplicity website.</a></li>
+        <li>Finally we must not overlook <a href="https://www.nngroup.com/" target="_blank" rel="noopener noreferrer">Jacob Nielsen and the N<strong>N</strong>/group</a></li>
+      </ul>
+    </section>
+    <article class='parallax'></article>
+
+    <section id="student-sites"></section>
+
+    <article class='parallax'></article>
+
+    <section id="security_stuff">
+      <h3>security stuff</h3>
+      <ul>
+        <li>change Plesk password</li>
+        <li>change FTP password(s) in Plesk and in VS Code sftp.json</li>
+        <li>change db user password(s) in Plesk and in /_includes/db_connect.php file</li>
+        <li>delete .vscode/sftp.json from web server (if uploaded)</li>
+        <li>check files on server for files you did not put yourself</li>
+        <li>remove non web files (.ai, .psd, .docx, .xslx etc)</li>
+      </ul>
+      <p>Plus... make a backup of all your files.</p>
+      <p>remind me Wednesday to get you to backup your db's</p>
+      <p><strong>github username & email config</strong>: In a terminal /command prompt enter these commands:</p>
+      <code>git config --global user.name "username"<br>
+git config --global user.email "email@email.com"</code>
+    </section>
+    <article class='parallax'></article>
+    <footer>
+      <p>&COPY; 2023</p>
+    </footer>
+
+    <nav>
+      <a href="https://web582.com" id="logo" target="_blank">web582.com</a>
+      <a href="#projects">projects</a>
+      <a href="#student-sites">sites</a>
+      <a href="./">ui/ux</a>
+      <a href="https://nortonb.web582.com">dynamic</a>
+      <a href="https://vaniercollege.omnivox.ca" target="_blank" aria-label="Omnivox"><img src="../images/logo-omnivox.png" alt=""></a>
+    </nav>
+
+  </main>
+
+  <script src="js/ui-ux.js"></script>
+  <script src="js/observer.js"></script>
+  <script src="js/observer_parallax.js"></script>
+</body>
+
+</html>

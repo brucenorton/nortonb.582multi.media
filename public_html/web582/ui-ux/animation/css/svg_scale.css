@@ -1,0 +1,9 @@
+#svg img,
+#svg_external object {
+  transform: scale(2);
+}
+
+#svg,
+#svg_external {
+  margin-bottom: 300px;
+}

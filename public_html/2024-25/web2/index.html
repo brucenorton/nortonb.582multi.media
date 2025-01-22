@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web://2</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/multimedia.css">
+
+</head>
+
+<body>
+  <nav></nav>
+
+  <header>
+    <h1>web://2</h1>
+    <h3>Web 2: Content Management & Animation </h3>
+    <h3>582-203-VA</h3>
+    <div id="header-nav">
+    </div>
+  </header>
+
+  <hr>
+
+  <section>
+    <article>
+      <h3>resources: general</h3>
+      <ul>
+        <li><a href="https://github.com/582Multimedia/" target="_blank" rel="noopener noreferrer">582Multimedia GitHub</a></li>
+        <li><a href="https://github.com/582Multimedia/software-links" target="_blank" rel="noopener noreferrer">582Multimedia GitHub software links</a></li>
+        ***
+        <li><a href="https://capibility.com/" target="_blank" rel="noopener noreferrer">Capibility.com</a></li>
+        <li><a href="https://582multi.media/capyskills/" target="_blank" rel="noopener noreferrer">CapySkills</a></li>
+        <li><a href="https://582multi.media/capyskills/grids/" target="_blank" rel="noopener noreferrer">CapySkills mobile grids</a></li>
+        <li><a href="https://transversal.triangulai.com/" target="_blank" rel="noopener noreferrer">Capy AI</a></li>
+      </ul>
+
+    </article>
+    <hr>
+    <article>
+      <h3>class notes on GitHub</h3>
+      <p>Check out the <a href="https://github.com/582Multimedia/web2-cms-animation " target="_blank" rel="noopener noreferrer">Web2 repository</a> with notes on using GitHub, CSS grid, animation techniques</p>
+    </article>
+    <hr>
+    <article>
+      <h3><strong>proposed</strong> units & projects</h3>
+      <p>What do you think?</p>
+      <ul>
+        <li>web animation units
+          <ul>
+            <li>series of animation exercises</li>
+            <li>a gallery / collection of animations</li>
+            <li>animated SPA (single page app) project</li>
+          </ul>
+        </li>
+        <li>Capython collaborative project</li>
+        <li>CMS (content management system) project using Wordpress
+          <ul>
+            <li>collaboration with 2nd-year students in web://4 </li>
+          </ul>
+        </li>
+        <li>personal project (LIA)</li>
+      </ul>
+    </article>
+  </section>
+
+
+  <hr>
+
+
+  <hr id="students">
+  <section id="student-section">
+    <h3>our sites</h3>
+    <article id="student-sites"></article>
+  </section>
+
+  <figure id="logo_divider"><img src="/images/logo_divider.png" alt=""></figure>
+
+  <footer></footer>
+
+  <script src="/js/fetch_common.js"></script>
+  <script src="/js/calendar.js"></script>
+  <script type="module">
+    import { fetchStudents } from '/js/fetch_students.mjs?cohort=s2_h2025&server=582helvetica.com&course=web2';
+    fetchStudents();
+  </script>
+</body>
+
+</html>

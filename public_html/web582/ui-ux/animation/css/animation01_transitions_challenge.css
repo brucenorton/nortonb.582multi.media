@@ -1,0 +1,26 @@
+/* animation01_transitions_challenge.css */
+
+figure {
+  position: relative;
+}
+figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+figure .hidden {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+figure .visible {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+figure:hover .hidden {
+  opacity: 1;
+}
+figure:hover .visible {
+  opacity: 0;
+}

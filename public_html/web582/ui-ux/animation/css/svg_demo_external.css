@@ -1,0 +1,97 @@
+.mountain,
+.cross {
+  fill: #dfe9c7;
+  animation-name: mountainMoves;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+.cross {
+  fill: #7f7f7f;
+}
+
+.sherbrooke {
+  fill: #bebebe;
+  animation-name: sherbrookeMoves;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.steCatherine {
+  fill: #7f7f7f;
+  animation-name: steCatherineMoves;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.reneLevesque,
+.big0,
+.big0fill {
+  fill: #404040;
+  animation-name: reneLevesqueMoves;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.st4 {
+  display: none;
+  fill: #2c2c2c;
+}
+
+.big0 {
+  fill: #2c2c2c;
+}
+.big0fill {
+  fill: #727272;
+}
+
+@keyframes mountainMoves {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes sherbrookeMoves {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes steCatherineMoves {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes reneLevesqueMoves {
+  0% {
+    transform: translateX(-600px);
+  }
+  50% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}

@@ -1,0 +1,50 @@
+{
+	"sections":[
+		{"section": [
+      {"studentNumber":"2042015", "firstName":"Alyssa", "lastName":"Colameo"},
+      {"studentNumber":"1866212", "firstName":"Amanda", "lastName":"Christou"},
+      {"studentNumber":"1995197", "firstName":"Angelica", "lastName":"Keiko Oda"},
+      {"studentNumber":"1858260", "firstName":"Christopher", "lastName":"Locke"},
+      {"studentNumber":"1777476", "firstName":"Dimitrios", "lastName":"Filipopoulos"},
+      {"studentNumber":"1939252", "firstName":"Dylan", "lastName":"White"},
+      {"studentNumber":"2049724", "firstName":"Eleni", "lastName":"Moshonas"},
+      {"studentNumber":"2064609", "firstName":"Elias", "lastName":"Konstantopoulos"},
+      {"studentNumber":"1872371", "firstName":"Ezrie", "lastName":"O'Donnell"},
+      {"studentNumber":"1810042", "firstName":"Iliyana", "lastName":"Ivaylova Yakimova"},
+      {"studentNumber":"2048351", "firstName":"Isabella", "lastName":"Vicenzo"},
+      {"studentNumber":"1828222", "firstName":"Jessica", "lastName":"Torres-Eleuterio"},
+      {"studentNumber":"2047926", "firstName":"Jessie", "lastName":"Grégoire"},
+      {"studentNumber":"1995337", "firstName":"Julian-Martin", "lastName":" Morong"},
+      {"studentNumber":"1670295", "firstName":"Maham", "lastName":"Vohra"},
+      {"studentNumber":"2047647", "firstName":"Makaela", "lastName":"Ramlackhan"},
+      {"studentNumber":"2059066", "firstName":"Mark", "lastName":"Beigleman"},
+      {"studentNumber":"1346476", "firstName":"Matthew", "lastName":"De Mauro"},
+      {"studentNumber":"2042556", "firstName":"Michael", "lastName":"Sabelli"},
+      {"studentNumber":"2031293", "firstName":"Robin", "lastName":"Lee Gonzales"},
+      {"studentNumber":"2062055", "firstName":"Simon", "lastName":"Ménard"},
+      {"studentNumber":"1767671", "firstName":"Thomas", "lastName":"Duliepre"},
+      {"studentNumber":"1989291", "firstName":"Zeynep", "lastName":"Catar"}
+         ]},
+      {"section":[
+         {"studentNumber":"2025875","lastName":"Lacroix", "firstName":"Albert"},
+         {"studentNumber":"1959611","lastName":"Sarkes", "firstName":"Berj"},
+         {"studentNumber":"1836058","lastName":"Manna", "firstName":"Bianca"},
+         {"studentNumber":"2064519","lastName":"Semoff", "firstName":"Camila"},
+         {"studentNumber":"1961035","lastName":"Wyroslak", "firstName":"Damian"},
+         {"studentNumber":"2023899","lastName":"Brown", "firstName":"Dontae"},
+         {"studentNumber":"2078260","lastName":"Gonzalez", "firstName":"Enrique"},
+         {"studentNumber":"1586929","lastName":"Mokbel", "firstName":"Florence"},
+         {"studentNumber":"1939932","lastName":"Hashim", "firstName":"Hanif"},
+         {"studentNumber":"1641037","lastName":"Zack", "firstName":"Jason"},
+         {"studentNumber":"2063106","lastName":"Guillaume-Nicolas", "firstName":"Jérémy"},
+         {"studentNumber":"1992487","lastName":"Sargeant", "firstName":"Julius"},
+         {"studentNumber":"2076414","lastName":"Palomino Paprocka", "firstName":"Karla"},
+         {"studentNumber":"2061175","lastName":"Norindr", "firstName":"Kimberly"},
+         {"studentNumber":"1929280","lastName":"Tenorio", "firstName":"Michael James"},
+         {"studentNumber":"2037774","lastName":"Budaghyan", "firstName":"Milena"},
+         {"studentNumber":"1907700","lastName":"Vo", "firstName":"Quang Minh"},
+         {"studentNumber":"2073132","lastName":"Medalssy", "firstName":"Simon"},
+         {"studentNumber":"2050498","lastName":"Marallag", "firstName":"Veronica"}
+      ]}
+	]
+}

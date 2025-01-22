@@ -1,0 +1,211 @@
+{
+  "sections": [
+    {
+      "students": [
+        {
+          "firstName": "Alexis",
+          "userName": "Alexis",
+          "studentNumber": "20"
+        },
+        {
+          "firstName": "Nathan",
+          "userName": "Nathan",
+          "studentNumber": "56"
+        },
+        {
+          "firstName": "Tyler",
+          "userName": "Tyler",
+          "studentNumber": "19"
+        },
+        {
+          "firstName": "Flavia",
+          "userName": "Flavia",
+          "studentNumber": "32"
+        },
+        {
+          "firstName": "Seraj",
+          "userName": "Seraj",
+          "studentNumber": "85"
+        },
+        {
+          "firstName": "Fiona",
+          "userName": "Fiona",
+          "studentNumber": "02"
+        },
+        {
+          "firstName": "Clyde",
+          "userName": "Clyde",
+          "studentNumber": "77"
+        },
+        {
+          "firstName": "Jasper",
+          "userName": "Jasper",
+          "studentNumber": "95"
+        },
+        {
+          "firstName": "Stephanie",
+          "userName": "Stephanie",
+          "studentNumber": "91"
+        },
+        {
+          "firstName": "Daniel",
+          "userName": "Daniel",
+          "studentNumber": "28"
+        },
+        {
+          "firstName": "Tony",
+          "userName": "Tony",
+          "studentNumber": "01"
+        },
+        {
+          "firstName": "Hudson",
+          "userName": "Hudson",
+          "studentNumber": "61"
+        },
+        {
+          "firstName": "Sharjana",
+          "userName": "Sharjana",
+          "studentNumber": "60"
+        },
+        
+        {
+          "firstName": "Stefania",
+          "userName": "Stefania",
+          "studentNumber": "78"
+        },
+        
+        {
+          "firstName": "Jason",
+          "userName": "Jason",
+          "studentNumber": "25"
+        },
+        {
+          "firstName": "Emma",
+          "userName": "Emma",
+          "studentNumber": "35"
+        },
+        {
+          "firstName": "Emmacolata",
+          "userName": "Emmacolata",
+          "studentNumber": "00"
+        },
+        {
+          "firstName": "Polina",
+          "userName": "Polina",
+          "studentNumber": "35"
+        }
+      ]
+    },
+    {
+      "students": [
+       {
+          "firstName": "Rafsun",
+          "userName": "Rafsun",
+          "studentNumber": "64"
+        },
+        
+        {
+          "firstName": "Jasmin",
+          "userName": "Jasmin",
+          "studentNumber": "40"
+        },{
+          "firstName": "Jerome",
+          "userName": "Jerome",
+          "studentNumber": "11"
+        },{
+          "firstName": "Kelly",
+          "userName": "Kelly",
+          "studentNumber": "69"
+        },{
+          "firstName": "Jacky",
+          "userName": "Jacky",
+          "studentNumber": "26"
+        },
+        {
+          "firstName": "Linh",
+          "userName": "Linh",
+          "studentNumber": "16"
+        },
+        {
+          "firstName": "Noah",
+          "userName": "Noah",
+          "studentNumber": "31"
+        },
+        {
+          "firstName": "Chad",
+          "userName": "Chad",
+          "studentNumber": "41"
+        },
+        {
+          "firstName": "Noof",
+          "userName": "Noof",
+          "studentNumber": "11"
+        },
+        {
+          "firstName": "Wenndy",
+          "userName": "Wenndy",
+          "studentNumber": "88"
+        },
+        {
+          "firstName": "Kin",
+          "userName": "Kin",
+          "studentNumber": "22"
+        },
+        {
+          "firstName": "Mohammad",
+          "userName": "Mohammad",
+          "studentNumber": "20"
+        },
+        {
+          "firstName": "Nicolas",
+          "userName": "Nicolas",
+          "studentNumber": "93"
+        },
+        
+        {
+          "firstName": "Katerina",
+          "userName": "Katerina",
+          "studentNumber": "83"
+        },
+        {
+          "firstName": "Tristan",
+          "userName": "Tristan",
+          "studentNumber": "55"
+        },
+        {
+          "firstName": "Ritika",
+          "userName": "Ritika",
+          "studentNumber": "58"
+        },
+        
+        {
+          "firstName": "Markayla",
+          "userName": "Markayla",
+          "studentNumber": "48"
+        },
+       
+        {
+          "firstName": "Axel",
+          "userName": "Axel",
+          "studentNumber": "55"
+        },
+        
+        {
+          "firstName": "Hugo",
+          "userName": "Hugo",
+          "studentNumber": "89"
+        },
+        {
+          "firstName": "Marina",
+          "userName": "Marina",
+          "studentNumber": "61"
+        },
+        {
+          "firstName": "Morgan",
+          "userName": "Morgan",
+          "studentNumber": "09"
+        }
+      ]
+    }
+  ]
+}

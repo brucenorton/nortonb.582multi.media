@@ -1,0 +1,37 @@
+{"sections":[
+  {"students": [
+    {"studentNumber":"35", "section":"00001", "firstName":"Emma L", "userName":"Emma"},
+    {"studentNumber":"00", "section":"00001", "firstName":"Emma A", "userName":"Emmacolata"},
+    {"studentNumber":"26", "section":"00001", "firstName":"Jacky", "userName":"Jacky"},
+    {"studentNumber":"40", "section":"00001", "firstName":"Jasmin", "userName":"Jasmin"},
+    {"studentNumber":"83", "section":"00001", "firstName":"Katerina", "userName":"Katerina"},
+    {"studentNumber":"16", "section":"00001", "firstName":"Linh", "userName":"Linh"},
+    {"studentNumber":"20", "section":"00001", "firstName":"Ziyan", "userName":"Ziyan"},
+    {"studentNumber":"93", "section":"00001", "firstName":"Nicolas", "userName":"Nicolas"},
+    {"studentNumber":"35", "section":"00001", "firstName":"Polina", "userName":"Polina"},
+    {"studentNumber":"64", "section":"00001", "firstName":"Rafsun", "userName":"Rafsun"},
+    {"studentNumber":"58", "section":"00001", "firstName":"Ritika", "userName":"Ritika"},
+    {"studentNumber":"60", "section":"00001", "firstName":"Sharjana", "userName":"Sharjana"},
+    {"studentNumber":"78", "section":"00001", "firstName":"Stefania", "userName":"Stefania"},
+    {"studentNumber":"19", "section":"00001", "firstName":"Tyler", "userName":"Tyler"}
+    ]},
+  {"students":[
+    {"studentNumber":"41", "section":"00002", "firstName":"Chad", "userName":"Chad"},
+    {"studentNumber":"77", "section":"00002", "firstName":"Clyde", "userName":"Clyde"},
+    {"studentNumber":"28", "section":"00002", "firstName":"Daniel", "userName":"Daniel"},
+    {"studentNumber":"02", "section":"00002", "firstName":"Fiona", "userName":"Fiona"},
+    {"studentNumber":"32", "section":"00002", "firstName":"Flavia", "userName":"Flavia"},
+    {"studentNumber":"25", "section":"00002", "firstName":"Jason", "userName":"Jason"},
+    {"studentNumber":"95", "section":"00002", "firstName":"Jasper", "userName":"Jasper"},
+    {"studentNumber":"69", "section":"00002", "firstName":"Kelly", "userName":"Kelly"},
+    {"studentNumber":"22", "section":"00002", "firstName":"Kin", "userName":"Kin"},
+    {"studentNumber":"48", "section":"00002", "firstName":"Markayla", "userName":"Markayla"},
+    {"studentNumber":"09", "section":"00002", "firstName":"Morgan", "userName":"Morgan"},
+    {"studentNumber":"31", "section":"00002", "firstName":"Noah", "userName":"Noah"},
+    {"studentNumber":"11", "section":"00002", "firstName":"Noof", "userName":"Noof"},
+    {"studentNumber":"91", "section":"00002", "firstName":"Stéphanie", "userName":"Stéphanie"},
+    {"studentNumber":"55", "section":"00002", "firstName":"Tristan", "userName":"Tristan"},
+    {"studentNumber":"88", "section":"00002", "firstName":"Wenndy", "userName":"Wenndy"}
+    ]}
+  ]
+}

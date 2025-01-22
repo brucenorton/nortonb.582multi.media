@@ -1,0 +1,413 @@
+/* does this work 
+	.st0 = mountain
+	.steCatherine{fill:#7F7F7F;} = steCatherine
+	.sherbrooke{fill:#BEBEBE;} = sherbrooke and cross
+	.reneLevesque{fill:#404040;} = reneLevesque
+	.st4{fill:#2C2C2C;} = bigO delete!!
+	.bigO{fill:#2C2C2C;} = bigO outline
+	.bigOfill{fill:#727272;} = bigO fill
+	
+	
+	*/
+.mountain {
+  fill: #dfe9c7;
+}
+.steCatherine {
+  fill: #7f7f7f;
+}
+.sherbrooke {
+  fill: #bebebe;
+}
+.reneLevesque {
+  fill: #404040;
+}
+.st4 {
+  display: none;
+  fill: #2c2c2c;
+}
+.bigO {
+  fill: #2c2c2c;
+}
+.bigOfill {
+  fill: #727272;
+}
+
+.mountain,
+.cross {
+  fill: #dfe9c7;
+  animation-name: mountainMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.cross {
+  fill: #404040;
+}
+.sherbrooke {
+  fill: #bebebe;
+  animation-name: sherbrookeMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.steCatherine {
+  fill: #7f7f7f;
+  animation-name: steCatherineMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.reneLevesque,
+.bigO,
+.bigOfill {
+  animation-name: reneLevesqueMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes mountainMoves {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes sherbrookeMoves {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+@keyframes steCatherineMoves {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+@keyframes reneLevesqueMoves {
+  0% {
+    transform: translateX(-600px);
+  }
+  50% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+
+/* this does not work, just to keep styles */
+#svg img {
+  transform: scale(2);
+}
+
+/* this should be in the svg <style> tag */
+
+<style type="text/css">
+	/* does this work 
+	.st0 = mountain
+	.steCatherine{fill:#7F7F7F;} = steCatherine
+	.sherbrooke{fill:#BEBEBE;} = sherbrooke and cross
+	.reneLevesque{fill:#404040;} = reneLevesque
+	.st4{fill:#2C2C2C;} = bigO delete!!
+	.bigO{fill:#2C2C2C;} = bigO outline
+	.bigOfill{fill:#727272;} = bigO fill
+	
+	
+	*/
+	.mountain {
+  fill: #dfe9c7;
+}
+.steCatherine {
+  fill: #7f7f7f;
+}
+.sherbrooke {
+  fill: #bebebe;
+}
+.reneLevesque {
+  fill: #4040404;
+}
+.st4 {
+  display: none;
+  fill: #2c2c2c;
+}
+.bigO {
+  fill: #2c2c2c;
+}
+.bigOfill {
+  fill: #727272;
+}
+
+.mountain,
+.cross {
+  fill: #dfe9c7;
+  animation-name: mountainMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.cross {
+  fill: #404040;
+}
+.sherbrooke {
+  fill: #bebebe;
+  animation-name: sherbrookeMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.steCatherine {
+  fill: #7f7f7f;
+  animation-name: steCatherineMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.reneLevesque,
+.bigO,
+.bigOfill {
+  animation-name: reneLevesqueMoves;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes mountainMoves {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes sherbrookeMoves {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+@keyframes steCatherineMoves {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+@keyframes reneLevesqueMoves {
+  0% {
+    transform: translateX(-600px);
+  }
+  50% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old versions */
+.mountain {
+  fill: #dfe9c7;
+  animation-name: mountainMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+.sherbrooke {
+  fill: #bebebe;
+  animation-name: sherbrookeMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+.steCatherine {
+  fill: #7f7f7f;
+  animation-name: steCatherineMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+.reneLevesque {
+  fill: #404040;
+  animation-name: reneLevesqueMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mountainMoves {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+@keyframes sherbrookeMoves {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+@keyframes steCatherineMoves {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+@keyframes reneLevesqueMoves {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+
+</style>
+
+/* more */
+.mountain {
+  fill: #dfe9c7;
+}
+.cross {
+  fill: #116699;
+}
+.sherbrooke {
+  fill: #bebebe;
+}
+.st3 {
+  fill: #404040;
+}
+.st4 {
+  display: none;
+  fill: #2c2c2c;
+}
+.st5 {
+  fill: #2c2c2c;
+}
+.st6 {
+  fill: #727272;
+}
+
+.mountain,
+.cross {
+  fill: #dfe9c7;
+  animation-name: mountainMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+.cross {
+  fill: #444444;
+}
+
+.sherbrooke {
+  fill: #bebebe;
+  animation-name: sherbrookeMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+.steCatherine {
+  fill: #7f7f7f;
+  animation-name: steCatherineMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+.st3 {
+  fill: #404040;
+  animation-name: reneLevesqueMoves;
+  animation-duration: 15s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes mountainMoves {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+@keyframes sherbrookeMoves {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+@keyframes steCatherineMoves {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+@keyframes reneLevesqueMoves {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}

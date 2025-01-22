@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>localStorage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="copyright" content="&COPY; 2022-2029">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/ui-ux.css">
+  <link rel="stylesheet" href="css/local_storage.css">
+
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>Applied UI/UX Design</h1>
+      <h2>582-31D-VA</h2>
+      <h3>Wednesdays 9-12:30 e413</h3>
+      <p>Bruce Norton</p>
+    </section>
+  </header>
+  <main class="light-mode">
+    <section>
+      <h3>window.localStorage</h3>
+      <p>cookies vs sessionStorage( ) vs localStorage( ) </p>
+      <p>uses for local storage</p>
+      <ul>
+        <li>store user preferences (i.e. dark / light mode)</li>
+        <li>store user interaction (i.e. dismissed a message / modal)</li>
+        <li>store <strong>non-sensitive</strong> info (i.e. user first name)</li>
+        <li>store user form data for longer or multi-part forms (i.e. ski school)</li>
+        <li>store json data using JSON.stringify( ) & JSON.parse( );</li>
+      </ul>
+      <hr>
+      <h3>Local Storage Methods</h3>
+      <ul>
+        <li>setItem( ); — adds / sets a key/value pair</li>
+        <li>getItem( ); — retrieves key/value pairs</li>
+        <li>removeItem( ); — deletes key/value pair</li>
+        <li>key( ); — gets keys by index</li>
+        <li>clear( ); — clears localStorage</li>
+      </ul>
+      <p>Check out <a href="https://www.loginradius.com/blog/engineering/guest-post/local-storage-vs-session-storage-vs-cookies/" target="_blank" rel="noopener noreferrer">this article on cookies vs sessionStorage vs localStorage</a></p>
+      </section>
+
+      <section>
+        <h3>demos</h3>
+        <article id="toggle-demo">
+          <span>toggle light / dark mode </span>
+          <input type="checkbox" id="toggle" />
+          <label for="toggle"></label>
+          <p>Check out this <a href="https://www.educative.io/answers/how-to-create-a-toggle-switch-with-css" target="_blank" rel="noopener noreferrer">toggle demo from Educative</a></p>
+        </article>
+        <article id="form-demo">
+          <h4>form info</h4>
+          <form id="insert-form">
+            <label for="user-name">user name</label><br>
+            <input type="text" name="user-name" required>
+            <label for="submit"></label><br>
+            <input type="submit" value="send it!">
+          </form>
+        </article>
+        <article>
+          <h4>modal</h4>
+          <button id="open-button" class="open-button">Open Button</button>
+        </article>
+        <article id="booking">
+          <h4>booking</h4>
+          <button id="booking-button" class="open-button">Check Booking</button>
+        </article>
+
+        <article>
+          <h4>clear localStorage( );</h4>
+          <a href="#" id="clear">clear localStorage( );</a>
+        </article>
+        
+      </section>
+
+
+      <div class="modal-overlay" id="modal-overlay"></div>
+
+      <section class="modal" id="modal">
+        <button class="close-button" id="close-button">dismiss modal (forever??)</button>
+        <article class="modal-guts">
+          <h2>Modal Example</h2>
+          <p>This modal example is taken from <a href="https://css-tricks.com/considerations-styling-modal/" target="_blank" rel="noopener noreferrer">CSS Tricks: Considerations for Styling a Modal</a></p>
+        </article>
+        
+        
+      </section>
+
+
+
+      <footer>
+        <p>&COPY; 2023</p>
+      </footer>
+    
+      <nav>
+        <a href="https://web582.com" id="logo" target="_blank">web582.com</a>
+        <a href="#projects">projects</a>
+        <a href="#student-sites">sites</a>
+        <a href="../">ui/ux</a>
+        <a href="https://nortonb.web582.com">dynamic</a>
+        <a href="https://vaniercollege.omnivox.ca" target="_blank"><img src="../../images/logo-omnivox.png" alt=""></a>
+      </nav>
+
+  <script src="js/local_storage.js"></script>
+</body>
+</html>

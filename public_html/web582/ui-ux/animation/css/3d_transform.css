@@ -1,0 +1,35 @@
+#s3d {
+  perspective: 1500px;
+}
+
+#platform {
+  width: 200px;
+  height: 350px;
+  background-color: rgba(96, 96, 96, 0.95);
+  transform: translateX(80px) rotateX(51deg) rotateZ(43deg);
+  transform-style: preserve-3d;
+  border-radius: 16px;
+  box-shadow: 1px 1px 0 1px #3b3b3b, -1px 0 28px 0 rgba(203, 203, 203, 0.1),
+    28px 28px 28px 0 rgba(187, 187, 187, 0.25);
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+}
+#platform:hover {
+  transform: translateX(80px) translate3d(0px, -16px, 0px) rotateX(51deg)
+    rotateZ(43deg);
+  box-shadow: 1px 1px 0 1px #3b3b3b, -1px 0 28px 0 rgba(192, 192, 192, 0.1),
+    54px 54px 28px -10px rgba(112, 112, 112, 0.15);
+}
+
+#platform p {
+  width: 350px;
+  transform: translateY(155px) translateX(-75px) translateZ(20px)
+    rotateX(-90deg) rotateY(90deg);
+  transform-style: preserve-3d;
+  opacity: 0;
+  transition: 0.4s ease-in-out opacity;
+}
+
+#platform:hover p {
+  opacity: 0.9;
+  text-shadow: 2px 6px 6px rgba(32, 32, 32, 0.5);
+}

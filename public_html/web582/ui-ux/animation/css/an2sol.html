@@ -1,0 +1,54 @@
+<script>
+// js
+// challenge solution
+
+let info = document.querySelector('#info-transform nav');
+
+info.addEventListener('click', toggleInfo);
+
+function toggleInfo(event) {
+  console.log('toggleInfo');
+  this.parentNode.classList.toggle('visible');
+}
+
+//bonus challenge solution
+
+let infoSections = document.querySelectorAll('article section nav');
+
+//loop through all the gallery images and add a showModal function
+infoSections.forEach(function(element){
+  element.addEventListener('click', showInfo);
+});
+
+function showInfo(element) {
+  this.parentNode.classList.toggle('visible');
+}
+</script>
+
+
+<style>
+/* css */
+/* solution */
+article {
+  position: relative;
+}
+article section {
+  position: absolute;
+  top: 2.44em;
+  width: 500px;
+  left: -500px;
+  padding: 0 1em 0.5em 0.5em;
+  background-color: rgba(16, 16, 16, 0.95);
+  transition: transform 0.5s;
+}
+article section nav {
+  width: 110%;
+  text-align: right;
+  background-color: rgba(16, 16, 16, 0.95);
+  padding: 0.5em;
+}
+
+.visible {
+  transform: translateX(500px);
+}
+</style>

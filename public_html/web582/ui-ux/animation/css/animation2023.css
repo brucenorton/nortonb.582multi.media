@@ -1,0 +1,13 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1.33fr;
+  padding: 0 1.44rem;
+}
+
+hr, .parallax{
+  grid-column: 1/-1;
+}
+
+.viewAppear{
+  padding: 0 1.44rem;
+}
