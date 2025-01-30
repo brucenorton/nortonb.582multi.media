@@ -34,8 +34,7 @@
   #cards h3 {
     font-size: clamp(0.833rem, 1.6vw + 0.579rem, 1.728rem);
     /* opacity transition*/
-    opacity: 0.5;
-    transition: opacity 1.5s;
+    
 
   }
 
@@ -46,35 +45,35 @@
 
   #cards .over{
     position: relative;
-    /* move card down top = 1.728rem */
-    transform: translateY(1.728rem);
-    opacity: 0;
-    transition: all 0.25s;
+    /* move card down top = 1.728rem opacity transition*/
+
   }
 
   /* better to put these styles with related styles, but gathering all animation styles here to make it easier to find */
 
   #cards a:hover {
     /* transition color */
-    transition: color 1s;
+
   }
 
   /* hover is still on the link, 'a' but style applies to h3 & p inside link element */
   #cards a:hover h3, #cards a:hover p{
     /* opacity 1*/
-    opacity: 1;
+
   }
 
   #cards section{
-    transform: translateY(2.074rem);
-    transition: transform 0.25s;
+    /* transform 2.074rem transition */
+   
   }
 
   #cards a:hover section{
-    transform: translateY(0);
+    /* translate 0 */
+    
   }
 
   #cards a:hover .over{
+    /* translate
     transform: translateY(0);
     opacity: 1;
   }
