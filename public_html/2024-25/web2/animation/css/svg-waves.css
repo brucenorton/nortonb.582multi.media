@@ -1,0 +1,73 @@
+header{
+  overflow: hidden;
+
+}
+header svg{
+  width: 200vw;
+  
+}
+
+header g{
+  opacity: 0.25;
+}
+
+#capy{
+  transition: transform 750ms;
+  max-width: 300px;
+}
+
+.move-right{
+  transform: translateX(70vw);
+}
+
+.st0 {
+  fill: #bdbdbd;
+}
+
+.st1 {
+  fill: #ff5722;
+}
+
+.st2 {
+  fill: #212121;
+}
+
+.st3 {
+  fill: #ff9700;
+}
+
+.st4 {
+  fill: #ffcc80;
+}
+
+/* animation styles */
+
+#grey-1{
+
+}
+
+#black-2{
+  animation: wavemaker 48s ease-in-out infinite alternate-reverse;
+}
+
+#salmon-3{
+  animation: wavemaker 30s ease-in-out infinite alternate;
+}
+
+#dark-orange-4{
+  animation: wavemaker 18s ease-in-out infinite alternate-reverse;
+}
+
+#orange-5{
+  animation: wavemaker 12s ease-in-out infinite alternate;
+}
+
+@keyframes wavemaker {  
+  0% {
+    transform: translateX(-4vw);
+  }
+  100% {
+    transform: translateX(-90vw);
+  }
+  
+}
