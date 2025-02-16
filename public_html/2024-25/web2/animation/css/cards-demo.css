@@ -1,0 +1,57 @@
+/* CSS for cards we can add this anywhere we would like to use cards */
+
+#cards{
+  display: grid;
+
+  gap: 1.44rem;
+}
+
+
+#cards a{
+  border: 2px solid rgb(33 66 99 /1);
+  border-radius: 1rem;
+  overflow: hidden;
+
+}
+
+#cards img{
+  /* opacity: 0.5; */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 0.5s;
+}
+
+#cards figure{
+  position: relative;
+}
+
+
+#cards section{
+  padding: 0 0.5rem 0.25rem;
+}
+
+
+#cards .top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#cards a:hover .top{
+  opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  #cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  #cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
